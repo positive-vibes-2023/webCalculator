@@ -7,42 +7,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>A Web based Calculator</h1>
     <div class="calculator">
         <div class="display"> Display screen.</div>
         <div class="input-container">
             <div class="top-row">
-                <button type="button" data-attribute="AC" class="special-operators">AC</button>
-                <button type="button" data-attribute="+/-" class="special-operators">+/-</button>
-                <button type="button" data-attribute="%" class="special-operators">%</button>
-                <button type="button" data-attribute="" class="operators">/</button>
+                <button type="button" data-value="AC"
+                data-type="operator-button" class="special-operators">AC</button>
+                <button type="button" data-value="+/-" data-type="operator-button" class="special-operators">+/-</button>
+                <button type="button" data-value="%" data-type="operator-button" class="special-operators">%</button>
+                <button type="button" data-value="/" data-type="operator-button" class="operators">/</button>
             </div>
             <div class="second-row">
-                <button type="button" data-attribute="7" class="numbers">7</button>
-                <button type="button" data-attribute="8" class="numbers">8</button>
-                <button type="button" data-attribute="9" class="numbers">9</button>
-                <button type="button" data-attribute="*" class="operators">*</button>
+                <button type="button" data-value="7" class="numbers">7</button>
+                <button type="button" data-value="8" class="numbers">8</button>
+                <button type="button" data-value="9" class="numbers">9</button>
+                <button type="button" data-value="*" data-type="operator-button" class="operators">*</button>
             </div>
             <div class="third-row">
-                <button type="button" data-attribute="4" class="numbers">4</button>
-                <button type="button" data-attribute="5" class="numbers">5</button>
-                <button type="button" data-attribute="6" class="numbers">6</button>
-                <button type="button" data-attribute="-" class="operators">-</button>
+                <button type="button" data-value="4" class="numbers">4</button>
+                <button type="button" data-value="5" class="numbers">5</button>
+                <button type="button" data-value="6" class="numbers">6</button>
+                <button type="button" data-value="-" data-type="operator-button" class="operators">-</button>
             </div>
             <div class="fourth-row">
-                <button type="button" data-attribute="1" class="numbers">1</button>
-                <button type="button" data-attribute="2" class="numbers">2</button>
-                <button type="button" data-attribute="3" class="numbers">3</button>
-                <button type="button" data-attribute="+" class="operators">+</button>
+                <button type="button" data-value="1" class="numbers">1</button>
+                <button type="button" data-value="2" class="numbers">2</button>
+                <button type="button" data-value="3" class="numbers">3</button>
+                <button type="button" data-value="+" data-type="operator-button" class="operators">+</button>
             </div>
             <div class="last-row">
-                <button type="button" data-attribute="0" class="numbers">0</button>
-                <button type="button" data-attribute="dot" class="numbers">
+                <button type="button" data-value="0" class="numbers">0</button>
+                <button type="button" data-value="." class="numbers">
                     <div id="dot"></div
                 </button>
-                <button type="button" data-attribute="=" id="result" class="operators">=</button>
+                <button type="button" data-value="=" data-type="operator-button" id="result" class="operators">=</button>
             </div>
              <div>
     </div>
     
 </body>
+<script type='module' src="miscFunctions.js"></script>
+
+<script type='module' src="script.js"></script>
+
 </html>
