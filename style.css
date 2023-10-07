@@ -15,6 +15,7 @@ body {
 .calculator {
 	display: flex;
 	flex-direction: column;
+	flex-grow: 1;
 	min-width: 40%;
 	min-height: 90%;
 	max-width: 90%;
